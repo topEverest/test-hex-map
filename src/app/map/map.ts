@@ -17,6 +17,7 @@ import {NgIf} from '@angular/common';
 export class Map implements AfterViewInit {
   cdr = inject(ChangeDetectorRef);
   private map!: L.Map;
+
   private http = inject(HttpClient);
   private geojsonData: any = null;
   private drawnHexagons: L.LayerGroup = L.layerGroup();
