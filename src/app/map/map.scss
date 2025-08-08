@@ -1,0 +1,31 @@
+.loader {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 2.5s linear infinite;
+}
+
+.info {
+  z-index: 999;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
